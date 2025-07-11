@@ -1,0 +1,53 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 232px;
+  box-shadow: 0px 0px 4px 0px #00000029;
+
+  height: calc(100vh - 100px);
+
+  ul {
+    padding: 0;
+  }
+
+  a {
+    color: #42526e !important;
+    padding: 8px 30px 8px 30px;
+  }
+
+  a:hover {
+    span {
+      color: #005dff !important;
+    }
+
+    li {
+      color: #005dff !important;
+    }
+  }
+
+  li {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  overflow: hidden;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 300px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.bottom-container {
+  padding-top: 300px;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+.login {
+  padding-bottom: 178px;
+}

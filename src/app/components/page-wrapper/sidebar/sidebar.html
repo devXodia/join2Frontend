@@ -1,0 +1,53 @@
+<div class="sidebar">
+  <div class="top-container">
+    <ul class="links list-style">
+      @if(loggedIn()){
+      <a href="/settings"
+        ><li>
+          <img src="/summary.svg" alt="summary" />
+          <span>Summary</span>
+        </li></a
+      >
+
+      <a href="/settings"
+        ><li>
+          <img src="/add_task.svg" alt="summary" />
+          <span>Add Task</span>
+        </li></a
+      >
+
+      <a href="/settings"
+        ><li>
+          <img src="/board.svg" alt="summary" />
+          <span>Board</span>
+        </li></a
+      >
+
+      <a href="/settings"
+        ><li>
+          <img src="/contacts.svg" alt="summary" />
+          <span>Contacts</span>
+        </li></a
+      >
+
+      } @else {
+      <div class="login">
+        <a href="/settings"
+          ><li>
+            <img src="/log_in.svg" alt="summary" />
+            <span>Log In</span>
+          </li></a
+        >
+      </div>
+      }
+    </ul>
+  </div>
+
+  <div class="bottom-container">
+    <ul class="links list-style">
+      <a href="/settings"><li>Privacy Policy</li></a>
+
+      <a href="/settings"><li>Legal Notice</li></a>
+    </ul>
+  </div>
+</div>

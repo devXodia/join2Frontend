@@ -1,0 +1,29 @@
+<div class="toolbar">
+  <a href="/summary">
+    <img src="/join_icon_white.svg" alt="Homepage Icon" />
+  </a>
+  <div class="right-side">
+    <span>Kanban Project Management Tool</span>
+    <img class="cursor-pointer" src="/help.svg" alt="help icon" />
+    <img
+      class="cursor-pointer"
+      src="/test_user_profile_icon.svg"
+      alt="my profile icon"
+      (click)="toggleDropdownContainer()"
+    />
+  </div>
+
+  @if(showDropdown()){
+  <div
+    class="dropdown-container"
+    clickedOutsideDirective
+    (clickedOutside)="closeDropdown()"
+  >
+    <ul class="list-style links">
+      <a href="/settings"><li>Legal Notice</li></a>
+      <a href="/settings"><li>Privacy Policy</li></a>
+      <a href="/settings"><li>Logout</li></a>
+    </ul>
+  </div>
+  }
+</div>
