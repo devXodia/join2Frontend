@@ -1,0 +1,17 @@
+<a class="link" href="/board"
+  ><div class="big-widget-container">
+    <div class="widget-container">
+      <div class="image-counter-container">
+        <img [src]="imagePath" />
+        <span class="counter">{{ counter }}</span>
+      </div>
+      <span class="widget-title">{{ title }}</span>
+    </div>
+    <div class="line"></div>
+
+    <div class="date-container">
+      <span class="date">{{ date | date:'MMMM d, y' }}</span>
+      <span class="deadline">Upcoming Deadline</span>
+    </div>
+  </div>
+</a>

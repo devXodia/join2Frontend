@@ -1,0 +1,43 @@
+.small-widget-container {
+  box-shadow: 0px 0px 4px 0px #00000029;
+  padding: 30px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 130px;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  &:hover {
+    background-color: #d2e3ff;
+  }
+}
+
+.image-counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  img {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+.counter {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.widget-title {
+  font-size: 16px;
+  color: #4589ff;
+}
+
+.link {
+  text-decoration: none !important;
+  color: black;
+}
+

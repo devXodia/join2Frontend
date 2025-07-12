@@ -1,0 +1,35 @@
+<div class="summary-container">
+  <span class="greeting"
+    >Good Morning, <span class="username">User</span>.</span
+  >
+
+  <div class="widget-container">
+    <div class="first-row">
+      @for(widget of firstRowWidgets; track widget.title){ @if(widget.size ===
+      'big'){
+      <big-widget-card
+        [counter]="widget.counter"
+        [imagePath]="widget.imagePath"
+        [title]="widget.title"
+        [date]="widget.date"
+      />
+      } @else{
+      <small-widget-card
+        [counter]="widget.counter"
+        [imagePath]="widget.imagePath"
+        [title]="widget.title"
+      />
+      } }
+    </div>
+
+    <div class="second-row">
+      @for(widget of secondRowWidgets; track widget.title){
+      <small-widget-card
+        [counter]="widget.counter"
+        [imagePath]="widget.imagePath"
+        [title]="widget.title"
+      />
+      }
+    </div>
+  </div>
+</div>
