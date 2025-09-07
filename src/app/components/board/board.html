@@ -1,0 +1,16 @@
+<div class="board-container">
+  <div class="find-task-container">
+    <div class="input">
+      <input type="text" placeholder="Find task" />
+      <div class="divider"></div>
+      <img src="/search.svg" alt="search" />
+    </div>
+
+    <button class="add-task-button">Add Task +</button>
+  </div>
+  <div class="task-wrapper-container">
+    @for(status of taskStatuses(); track status) {
+      <task-container class="height-100" [status]="status"></task-container>
+    }
+  </div>
+</div>

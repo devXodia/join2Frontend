@@ -1,0 +1,15 @@
+<div
+  class="progress-wrap"
+  role="progressbar"
+  [attr.aria-valuenow]="clampedDone"
+  aria-valuemin="0"
+  [attr.aria-valuemax]="total()"
+>
+  <div class="bar" [style.background]="trackColor">
+    <div class="fill" [style.width.%]="percent" [style.background]="fillColor"></div>
+  </div>
+
+  <span class="text">
+    {{ clampedDone }}/{{ total() }} Subtasks
+  </span>
+</div>
